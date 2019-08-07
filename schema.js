@@ -70,12 +70,6 @@ const RootQuery = new GraphQLObjectType({
         return axios.get(`https://api.spacexdata.com/v3/rockets/${args.id}`).then(res => res.data)
       },
     },
-    // launch_site:{
-    //   type: LaunchSiteType,
-    //   resolve(parent, args){
-    //     return axios.get(`https://api.spacexdata.com/v3/launches`).then(res => res.data)
-    //   }
-    // }
   }
 })
 
